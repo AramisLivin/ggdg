@@ -62,6 +62,11 @@ namespace GoogleARCore
         /// that has a surface normal estimate (orientation).
         /// </summary>
         FeaturePointWithSurfaceNormal = 1 << 4,
+        
+        /// <summary>
+        /// The collision is on a monster in the current frame's point cloud.
+        /// </summary>
+        Monster = 1 << 5,
 
         /// <summary>
         /// This value is used to collide with all things good for placing objects.
@@ -69,6 +74,6 @@ namespace GoogleARCore
         /// If you pass this into Raycast, you will collide with planes within the bounding
         /// polygon and feature points with normals.
         /// </summary>
-        Default = PlaneWithinPolygon | FeaturePointWithSurfaceNormal
+        Default = PlaneWithinPolygon | Monster
     }
 }

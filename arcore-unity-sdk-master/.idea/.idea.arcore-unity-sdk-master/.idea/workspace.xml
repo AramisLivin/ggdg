@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17fb728b-39c6-4a16-98d1-6351f656e32b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/Common/Prefabs/DetectedPlaneVisualizer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/Common/Prefabs/DetectedPlaneVisualizer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Materials/ARBackground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Materials/ARBackground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHitFlags.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHitFlags.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SavedScreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SavedScreen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Test/PhotoResolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test/PhotoResolver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,24 +27,36 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/ARCoreSession.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3427FF44-A531-447C-8158-09E1FA5F66C8/7c/2766d22e/GameView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Test/PhotoResolver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/PhotoResolver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0DF6749E-A7EB-43F5-8475-647FABED0313/4b/3b3fd7e2/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3427FF44-A531-447C-8158-09E1FA5F66C8/6e/640e9173/HostView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHitFlags.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/PhotoResolver (1).cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3427FF44-A531-447C-8158-09E1FA5F66C8/05/6a6400d2/PlayModeView.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$USER_HOME$/Downloads/PhotoResolver (1).cs" />
+        <option value="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHitFlags.cs" />
         <option value="$PROJECT_DIR$/Assets/Test/PhotoResolver.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1ZhvocvZYN7aYptRAxlcAwFKIoa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -72,7 +95,14 @@
       <option name="presentableId" value="Default" />
       <updated>1585304317079</updated>
       <workItem from="1585304324616" duration="4050000" />
-      <workItem from="1585716565434" duration="627000" />
+      <workItem from="1585716565434" duration="1226000" />
+      <workItem from="1585842133297" duration="544000" />
+      <workItem from="1585842884214" duration="59000" />
+      <workItem from="1585842964117" duration="4883000" />
+      <workItem from="1585932024203" duration="631000" />
+      <workItem from="1585933084700" duration="93000" />
+      <workItem from="1586157587484" duration="9442000" />
+      <workItem from="1586246163564" duration="21915000" />
     </task>
     <servers />
   </component>
@@ -81,78 +111,96 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1799" height="364" key="GridCell.Tab.0.bottom" timestamp="1585308876093">
+    <state width="1799" height="364" key="GridCell.Tab.0.bottom" timestamp="1585847851021">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.0.bottom/78.0.1842.1080@78.0.1842.1080" timestamp="1585308876093" />
-    <state width="1799" height="364" key="GridCell.Tab.0.center" timestamp="1585308876093">
+    <state width="1799" height="364" key="GridCell.Tab.0.bottom/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851021" />
+    <state width="1799" height="364" key="GridCell.Tab.0.center" timestamp="1585847851021">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.0.center/78.0.1842.1080@78.0.1842.1080" timestamp="1585308876093" />
-    <state width="1799" height="364" key="GridCell.Tab.0.left" timestamp="1585308876093">
+    <state width="1799" height="364" key="GridCell.Tab.0.center/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851021" />
+    <state width="1799" height="364" key="GridCell.Tab.0.left" timestamp="1585847851021">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.0.left/78.0.1842.1080@78.0.1842.1080" timestamp="1585308876093" />
-    <state width="1799" height="364" key="GridCell.Tab.0.right" timestamp="1585308876093">
+    <state width="1799" height="364" key="GridCell.Tab.0.left/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851021" />
+    <state width="1799" height="364" key="GridCell.Tab.0.right" timestamp="1585847851021">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.0.right/78.0.1842.1080@78.0.1842.1080" timestamp="1585308876093" />
-    <state width="1799" height="364" key="GridCell.Tab.1.bottom" timestamp="1585308875961">
+    <state width="1799" height="364" key="GridCell.Tab.0.right/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851021" />
+    <state width="1799" height="364" key="GridCell.Tab.1.bottom" timestamp="1585847851022">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.1.bottom/78.0.1842.1080@78.0.1842.1080" timestamp="1585308875961" />
-    <state width="1799" height="364" key="GridCell.Tab.1.center" timestamp="1585308875961">
+    <state width="1799" height="364" key="GridCell.Tab.1.bottom/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851022" />
+    <state width="1799" height="364" key="GridCell.Tab.1.center" timestamp="1585847851021">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.1.center/78.0.1842.1080@78.0.1842.1080" timestamp="1585308875961" />
-    <state width="1799" height="364" key="GridCell.Tab.1.left" timestamp="1585308875961">
+    <state width="1799" height="364" key="GridCell.Tab.1.center/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851021" />
+    <state width="1799" height="364" key="GridCell.Tab.1.left" timestamp="1585847851021">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.1.left/78.0.1842.1080@78.0.1842.1080" timestamp="1585308875961" />
-    <state width="1799" height="364" key="GridCell.Tab.1.right" timestamp="1585308875961">
+    <state width="1799" height="364" key="GridCell.Tab.1.left/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851021" />
+    <state width="1799" height="364" key="GridCell.Tab.1.right" timestamp="1585847851022">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.1.right/78.0.1842.1080@78.0.1842.1080" timestamp="1585308875961" />
-    <state width="1799" height="364" key="GridCell.Tab.2.bottom" timestamp="1585308875961">
+    <state width="1799" height="364" key="GridCell.Tab.1.right/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851022" />
+    <state width="1799" height="364" key="GridCell.Tab.2.bottom" timestamp="1585847851022">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.2.bottom/78.0.1842.1080@78.0.1842.1080" timestamp="1585308875961" />
-    <state width="1799" height="364" key="GridCell.Tab.2.center" timestamp="1585308875961">
+    <state width="1799" height="364" key="GridCell.Tab.2.bottom/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851022" />
+    <state width="1799" height="364" key="GridCell.Tab.2.center" timestamp="1585847851022">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.2.center/78.0.1842.1080@78.0.1842.1080" timestamp="1585308875961" />
-    <state width="1799" height="364" key="GridCell.Tab.2.left" timestamp="1585308875961">
+    <state width="1799" height="364" key="GridCell.Tab.2.center/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851022" />
+    <state width="1799" height="364" key="GridCell.Tab.2.left" timestamp="1585847851022">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.2.left/78.0.1842.1080@78.0.1842.1080" timestamp="1585308875961" />
-    <state width="1799" height="364" key="GridCell.Tab.2.right" timestamp="1585308875961">
+    <state width="1799" height="364" key="GridCell.Tab.2.left/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851022" />
+    <state width="1799" height="364" key="GridCell.Tab.2.right" timestamp="1585847851022">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.2.right/78.0.1842.1080@78.0.1842.1080" timestamp="1585308875961" />
-    <state width="1799" height="364" key="GridCell.Tab.3.bottom" timestamp="1585308875962">
+    <state width="1799" height="364" key="GridCell.Tab.2.right/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851022" />
+    <state width="1799" height="364" key="GridCell.Tab.3.bottom" timestamp="1585847851022">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.3.bottom/78.0.1842.1080@78.0.1842.1080" timestamp="1585308875962" />
-    <state width="1799" height="364" key="GridCell.Tab.3.center" timestamp="1585308875962">
+    <state width="1799" height="364" key="GridCell.Tab.3.bottom/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851022" />
+    <state width="1799" height="364" key="GridCell.Tab.3.center" timestamp="1585847851022">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.3.center/78.0.1842.1080@78.0.1842.1080" timestamp="1585308875962" />
-    <state width="1799" height="364" key="GridCell.Tab.3.left" timestamp="1585308875961">
+    <state width="1799" height="364" key="GridCell.Tab.3.center/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851022" />
+    <state width="1799" height="364" key="GridCell.Tab.3.left" timestamp="1585847851022">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.3.left/78.0.1842.1080@78.0.1842.1080" timestamp="1585308875961" />
-    <state width="1799" height="364" key="GridCell.Tab.3.right" timestamp="1585308875962">
+    <state width="1799" height="364" key="GridCell.Tab.3.left/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851022" />
+    <state width="1799" height="364" key="GridCell.Tab.3.right" timestamp="1585847851022">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state width="1799" height="364" key="GridCell.Tab.3.right/78.0.1842.1080@78.0.1842.1080" timestamp="1585308875962" />
-    <state x="655" y="250" key="run.anything.popup" timestamp="1585308941969">
+    <state width="1799" height="364" key="GridCell.Tab.3.right/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851022" />
+    <state x="591" y="272" key="Vcs.Push.Dialog.v2" timestamp="1586246470244">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state x="655" y="250" key="run.anything.popup/78.0.1842.1080@78.0.1842.1080" timestamp="1585308941969" />
-    <state x="662" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1585305515754">
+    <state x="591" y="272" key="Vcs.Push.Dialog.v2/78.0.1842.1080@78.0.1842.1080" timestamp="1586246470244" />
+    <state x="655" y="250" key="run.anything.popup" timestamp="1586354536238">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state x="662" y="235" width="672" height="678" key="search.everywhere.popup/78.0.1842.1080@78.0.1842.1080" timestamp="1585305515754" />
+    <state x="655" y="250" key="run.anything.popup/78.0.1842.1080@78.0.1842.1080" timestamp="1586354536238" />
+    <state x="662" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1586248330256">
+      <screen x="78" y="0" width="1842" height="1080" />
+    </state>
+    <state x="662" y="235" width="672" height="678" key="search.everywhere.popup/78.0.1842.1080@78.0.1842.1080" timestamp="1586248330256" />
   </component>
 </project>

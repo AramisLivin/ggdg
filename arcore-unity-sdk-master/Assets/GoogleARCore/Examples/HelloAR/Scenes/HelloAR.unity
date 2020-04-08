@@ -192,6 +192,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1536853937296922, guid: 26558ae1d2e7243728486d789f984c53, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4205356930328266, guid: 26558ae1d2e7243728486d789f984c53, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -359,7 +363,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 20.53}
+  m_AnchoredPosition: {x: 0, y: 20.53003}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &992163461
@@ -470,7 +474,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 615d65a6b2b591443bed542a8bc9f223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mat: {fileID: 2100000, guid: 03ad0130a037647aeb60218f61aca114, type: 2}
+  CameraMaterial: {fileID: 2100000, guid: 03ad0130a037647aeb60218f61aca114, type: 2}
+  tex: {fileID: 0}
 --- !u!1 &1233457656
 GameObject:
   m_ObjectHideFlags: 0
