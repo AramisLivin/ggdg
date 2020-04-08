@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17fb728b-39c6-4a16-98d1-6351f656e32b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/BottlePref.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/BottlePref.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/MonsterManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/MonsterManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/Common/Prefabs/DetectedPlaneVisualizer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/Common/Prefabs/DetectedPlaneVisualizer.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Materials/ARBackground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Materials/ARBackground.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHitFlags.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHitFlags.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SavedScreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SavedScreen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Test/PhotoResolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test/PhotoResolver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +25,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Test/MonsterManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/ARCoreSession.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3427FF44-A531-447C-8158-09E1FA5F66C8/7c/2766d22e/GameView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Test/PhotoResolver.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,6 +33,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0DF6749E-A7EB-43F5-8475-647FABED0313/4b/3b3fd7e2/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3427FF44-A531-447C-8158-09E1FA5F66C8/6e/640e9173/HostView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHitFlags.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0DF6749E-A7EB-43F5-8475-647FABED0313/27/ed25e9c0/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/PhotoResolver (1).cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3427FF44-A531-447C-8158-09E1FA5F66C8/05/6a6400d2/PlayModeView.cs" root0="SKIP_HIGHLIGHTING" />
@@ -43,6 +44,7 @@
         <option value="$USER_HOME$/Downloads/PhotoResolver (1).cs" />
         <option value="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHitFlags.cs" />
         <option value="$PROJECT_DIR$/Assets/Test/PhotoResolver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Test/MonsterManager.cs" />
       </list>
     </option>
   </component>
@@ -103,6 +105,7 @@
       <workItem from="1585933084700" duration="93000" />
       <workItem from="1586157587484" duration="9442000" />
       <workItem from="1586246163564" duration="21915000" />
+      <workItem from="1586361906594" duration="7480000" />
     </task>
     <servers />
   </component>
@@ -116,7 +119,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

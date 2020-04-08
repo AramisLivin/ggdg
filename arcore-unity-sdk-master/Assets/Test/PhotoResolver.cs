@@ -15,8 +15,9 @@ public class PhotoResolver : MonoBehaviour
 {
     public Material CameraMaterial;
     private Camera MainCamera;
-    public Texture2D tex;
+    private Texture2D tex;
     private MeshCollider coll;
+    public Vector3 BottleBot;
     
     private void Start()
     {
@@ -54,7 +55,7 @@ public class PhotoResolver : MonoBehaviour
             tex = (Texture2D) CameraMaterial.mainTexture;
             byte[] bytes = tex.EncodeToPNG();
            // tex.GetPixel()
-            ScanColor(tex);
+            
            // Object.Destroy(tex);
             Upload(bytes);
             
@@ -77,18 +78,6 @@ public class PhotoResolver : MonoBehaviour
            response.EnsureSuccessStatusCode();
            httpClient.Dispose();
            string sd = response.Content.ReadAsStringAsync().Result;
-           //Debug.Log("msg: " + sd);
-           /*int loop1;
-           HttpFileCollection Files;
- 
-           var Files =response.Headers; // Load File collection into HttpFileCollection variable.
-           arr1 = Files.AllKeys;  // This will get names of all files into a string array.
-           for (loop1 = 0; loop1 < arr1.Length; loop1++) 
-           {
-               Response.Write("File: " + Server.HtmlEncode(arr1[loop1]) + "<br />");
-               Response.Write("  size = " + Files[loop1].ContentLength + "<br />");
-               Response.Write("  content type = " + Files[loop1].ContentType + "<br />");
-           }*/
         }
 
    
@@ -102,13 +91,12 @@ public class PhotoResolver : MonoBehaviour
     
     //Checking downloaded mask from the server for a bottles
     private void ScanColor(Texture2D Frame)
-    { //Checking every pixel of the downloaded mask for a mask pixel with RGBA(0,0,0,1)
-        //Here comes x,y,width,height
-        int maskX = 500, maskY = 500, width = 500, height = 500;
-       // for (int i = 0; i < 10; i++)
+    {    //Here comes x,y,width,height
+        int maskX = 500, maskY = 500, width = 500, height = 500, CountOfMasks = 1;
+        //for (int i = 0; i < CountOfMasks; i++)
         //{   
             Debug.Log("Mask "+" downloaded");
-            
+            BottleBot = new Vector3();
             TrackableHit hit;
             TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
                                               TrackableHitFlags.FeaturePointWithSurfaceNormal;
@@ -116,6 +104,7 @@ public class PhotoResolver : MonoBehaviour
             
             if (GoogleARCore.Frame.Raycast(maskX + width / 2, maskY + height, raycastFilter, out hit))
             {
+                BottleBot = hit.Pose.position;
                 Debug.Log("Bottle has been found and placed on X: " + hit.Pose.position.x +", Y: " + hit.Pose.position.y + ", Z: " + hit.Pose.position.z);
                 Debug.Log("Bottle has been found and placed. Distance to it: "+ hit.Distance + "m.");
             }
@@ -123,15 +112,8 @@ public class PhotoResolver : MonoBehaviour
             {
                 Debug.Log("Bottle has not been found!");
             }
-            /* boxes = ... //tuple of XYWH
-                masks = ... //images arrays
-                image // input image from camera
-                    boxes, masks = request_from_server(image)
-                // len(boxes) == len(masks)
-                n = len(boxes)
-                centers = [] // XY
-                for (i = 0; i < n; ++i)
-                    centers = [boxes[0] + boxes[2] // 2, boxes[1] + boxes[3] // 2]*/
+            
+            
         //}  
     }
     }
