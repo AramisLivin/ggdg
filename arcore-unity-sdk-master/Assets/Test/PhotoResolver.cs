@@ -3,13 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
+using System.Threading.Tasks;
 using CollabProxy.UI;
+using Google.Protobuf;
 using GoogleARCore;
 using Microsoft.SqlServer.Server;
 using Unity.UNetWeaver;
 using UnityEngine;
 using UnityEngine.Networking;
 using Object = UnityEngine.Object;
+using System.Text.Json;
 
 public class PhotoResolver : MonoBehaviour
 {
@@ -18,7 +21,8 @@ public class PhotoResolver : MonoBehaviour
     private Texture2D tex;
     private MeshCollider coll;
     public Vector3 BottleBot;
-    
+    private List<List<int>> locations;
+    private List<byte[]> images;
     private void Start()
     {
         MainCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
@@ -34,13 +38,13 @@ public class PhotoResolver : MonoBehaviour
     //Scene is started // BUTTON IS PRESSED
     public void Shot()
     {
-        StartCoroutine(UploadPNG());
+        StartCoroutine(CapturePNG());
         
     }
 
     
     
-    IEnumerator UploadPNG()
+    IEnumerator CapturePNG()
     {
         while (true)
         {
@@ -57,8 +61,12 @@ public class PhotoResolver : MonoBehaviour
            // tex.GetPixel()
             
            // Object.Destroy(tex);
-            Upload(bytes);
-            
+           
+           var result = GetMaskFromServer(bytes).Result;
+           locations = result.Item1;
+           images = result.Item2;
+           
+           
             // For testing purposes, also write to a file in the project folder
             File.WriteAllBytes(Application.dataPath + "/SavedScreen.png", bytes);
             Debug.Log("Shotted to: " + Application.dataPath + " SavedScreen.png");
@@ -67,34 +75,52 @@ public class PhotoResolver : MonoBehaviour
     }
 
     //Uploading camera view to the server to get masks
-   static async void Upload(byte[] bytes) 
-        {
-           HttpClient httpClient = new HttpClient();
-           httpClient.BaseAddress = new Uri("http://188.214.128.128:80/");
-           MultipartFormDataContent form = new MultipartFormDataContent();
-           form.Add(new ByteArrayContent(bytes, 0, bytes.Length), "image", "image.webp");
-           var response = await httpClient.PostAsync("/api/bottle/masks", form);
-           //Debug.Log("msg: " + response.StatusCode.ToString());
-           response.EnsureSuccessStatusCode();
-           httpClient.Dispose();
-           string sd = response.Content.ReadAsStringAsync().Result;
-        }
-
-   
-   
-    static async void Download() // Download mask from the server
-    {    
+    static async Task<Tuple<List<List<int>>, List<byte[]>>> GetMaskFromServer(byte[] bytes) 
+    {
+        HttpClient httpClient = new HttpClient();
+        httpClient.BaseAddress = new Uri("http://188.214.128.128:80/");
+        MultipartFormDataContent form = new MultipartFormDataContent();
+        form.Add(new ByteArrayContent(bytes, 0, bytes.Length), "image", "image.webp");
+        var response = await httpClient.PostAsync("/api/bottle/masks", form);
+        response.EnsureSuccessStatusCode();
+        httpClient.Dispose();
+        var provider = await response.Content.ReadAsMultipartAsync();
+        // Default empty value
+        List<List<int>> result_locs = new List<List<int>>();
+        List<byte[]> result_imgs = new List<byte[]>();
         
+        // Parse response
+        foreach (var httpContent in provider.Contents)
+        {
+            string fileName = httpContent.Headers.ContentDisposition.FileName;
+            if (fileName.Equals("\"locations.json\""))
+            {
+                string locs = httpContent.ReadAsStringAsync().Result;
+                result_locs = JsonSerializer.Deserialize<LocationsJSON>(locs).locations;
+            }
+            else
+            {
+                byte[] img = httpContent.ReadAsByteArrayAsync().Result;
+                result_imgs.Add(img);
+            }
+        }
+        return new Tuple<List<List<int>>, List<byte[]>>(result_locs, result_imgs);
     }
-
-    
     
     //Checking downloaded mask from the server for a bottles
     private void ScanColor(Texture2D Frame)
-    {    //Here comes x,y,width,height
-        int maskX = 500, maskY = 500, width = 500, height = 500, CountOfMasks = 1;
-        //for (int i = 0; i < CountOfMasks; i++)
-        //{   
+    {   
+        //Count of masks is writed from responce
+        int CountOfMasks = locations.Count;
+        for (int i = 0; i < CountOfMasks; i++)
+        {
+            //Here comes x,y,width,height
+            int maskX = locations[i][0];
+            int maskY = locations[i][1];
+            int width = locations[i][2];
+            int height = locations[i][3];
+            
+            
             Debug.Log("Mask "+" downloaded");
             BottleBot = new Vector3();
             TrackableHit hit;
@@ -114,10 +140,14 @@ public class PhotoResolver : MonoBehaviour
             }
             
             
-        //}  
+        }  
     }
     }
     
+public class LocationsJSON
+{
+    public List<List<int>> locations { get; set; }
+}
     
     
 

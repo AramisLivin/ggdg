@@ -312,6 +312,117 @@
             </e>
           </e>
         </e>
+        <e p="Packages" t="Include">
+          <e p="Microsoft.AspNet.WebApi.Client.5.2.7" t="Include">
+            <e p="lib" t="Include">
+              <e p="net45" t="Include">
+                <e p="System.Net.Http.Formatting.xml" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Microsoft.AspNet.WebApi.Core.5.2.7" t="Include">
+            <e p="lib" t="Include">
+              <e p="net45" t="Include">
+                <e p="System.Web.Http.xml" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Microsoft.AspNet.WebApi.WebHost.5.2.7" t="Include">
+            <e p="lib" t="Include">
+              <e p="net45" t="Include">
+                <e p="System.Web.Http.WebHost.xml" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Microsoft.Bcl.AsyncInterfaces.1.1.0" t="Include">
+            <e p="lib" t="Include">
+              <e p="net461" t="Include">
+                <e p="Microsoft.Bcl.AsyncInterfaces.xml" t="Include" />
+              </e>
+            </e>
+            <e p="useSharedDesignerContext.txt" t="Include" />
+            <e p="version.txt" t="Include" />
+          </e>
+          <e p="Newtonsoft.Json.6.0.4" t="Include">
+            <e p="lib" t="Include">
+              <e p="net45" t="Include">
+                <e p="Newtonsoft.Json.xml" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="System.Buffers.4.5.0" t="Include">
+            <e p="lib" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="System.Buffers.xml" t="Include" />
+              </e>
+            </e>
+            <e p="useSharedDesignerContext.txt" t="Include" />
+            <e p="version.txt" t="Include" />
+          </e>
+          <e p="System.Memory.4.5.3" t="Include">
+            <e p="lib" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="System.Memory.xml" t="Include" />
+              </e>
+            </e>
+            <e p="useSharedDesignerContext.txt" t="Include" />
+            <e p="version.txt" t="Include" />
+          </e>
+          <e p="System.Numerics.Vectors.4.5.0" t="Include">
+            <e p="lib" t="Include">
+              <e p="net46" t="Include">
+                <e p="System.Numerics.Vectors.xml" t="Include" />
+              </e>
+            </e>
+            <e p="useSharedDesignerContext.txt" t="Include" />
+            <e p="version.txt" t="Include" />
+          </e>
+          <e p="System.Runtime.CompilerServices.Unsafe.4.7.0" t="Include">
+            <e p="lib" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="System.Runtime.CompilerServices.Unsafe.xml" t="Include" />
+              </e>
+            </e>
+            <e p="useSharedDesignerContext.txt" t="Include" />
+            <e p="version.txt" t="Include" />
+          </e>
+          <e p="System.Text.Encodings.Web.4.7.0" t="Include">
+            <e p="lib" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="System.Text.Encodings.Web.xml" t="Include" />
+              </e>
+            </e>
+            <e p="useSharedDesignerContext.txt" t="Include" />
+            <e p="version.txt" t="Include" />
+          </e>
+          <e p="System.Text.Json.4.7.1" t="Include">
+            <e p="lib" t="Include">
+              <e p="net461" t="Include">
+                <e p="System.Text.Json.xml" t="Include" />
+              </e>
+            </e>
+            <e p="useSharedDesignerContext.txt" t="Include" />
+            <e p="version.txt" t="Include" />
+          </e>
+          <e p="System.Threading.Tasks.Extensions.4.5.2" t="Include">
+            <e p="lib" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="System.Threading.Tasks.Extensions.xml" t="Include" />
+              </e>
+            </e>
+            <e p="useSharedDesignerContext.txt" t="Include" />
+            <e p="version.txt" t="Include" />
+          </e>
+          <e p="System.ValueTuple.4.5.0" t="Include">
+            <e p="lib" t="Include">
+              <e p="net47" t="Include">
+                <e p="System.ValueTuple.xml" t="Include" />
+              </e>
+            </e>
+            <e p="useSharedDesignerContext.txt" t="Include" />
+            <e p="version.txt" t="Include" />
+          </e>
+        </e>
         <e p="PlayServicesResolver" t="Include">
           <e p="Editor" t="Include">
             <e p="play-services-resolver_v1.2.122.0.txt" t="Include" />

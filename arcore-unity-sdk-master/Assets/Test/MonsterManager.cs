@@ -19,11 +19,10 @@ public class MonsterManager : MonoBehaviour
     void Update()
     {
         BottlePos = Camera.GetComponent<PhotoResolver>().BottleBot;
-        BottleRecognize();
     }
 
     public void BottleRecognize()
     {
-        Instantiate(BottlePrefab, BottlePos, Quaternion.identity);
+        
     }
 }
