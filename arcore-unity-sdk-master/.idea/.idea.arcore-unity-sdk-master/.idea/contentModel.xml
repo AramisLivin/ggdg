@@ -350,18 +350,18 @@
               </e>
             </e>
           </e>
-          <e p="System.Buffers.4.5.0" t="Include">
+          <e p="System.Buffers.4.5.1" t="Include">
             <e p="lib" t="Include">
-              <e p="netstandard2.0" t="Include">
+              <e p="net461" t="Include">
                 <e p="System.Buffers.xml" t="Include" />
               </e>
             </e>
             <e p="useSharedDesignerContext.txt" t="Include" />
             <e p="version.txt" t="Include" />
           </e>
-          <e p="System.Memory.4.5.3" t="Include">
+          <e p="System.Memory.4.5.4" t="Include">
             <e p="lib" t="Include">
-              <e p="netstandard2.0" t="Include">
+              <e p="net461" t="Include">
                 <e p="System.Memory.xml" t="Include" />
               </e>
             </e>
@@ -428,7 +428,7 @@
             <e p="play-services-resolver_v1.2.122.0.txt" t="Include" />
           </e>
         </e>
-        <e p="Test" t="Include">
+        <e p="Scripts" t="Include">
           <e p="MonsterManager.cs" t="Include" />
           <e p="PhotoResolver.cs" t="Include" />
         </e>
