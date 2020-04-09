@@ -1,123 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17fb728b-39c6-4a16-98d1-6351f656e32b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/LICENSE.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/LICENSE.TXT.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/System.Buffers.4.5.1.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/System.Buffers.4.5.1.nupkg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/THIRD-PARTY-NOTICES.TXT.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/lib.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/lib/net461.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/lib/net461/System.Buffers.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/lib/net461/System.Buffers.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/lib/net461/System.Buffers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/lib/net461/System.Buffers.xml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/useSharedDesignerContext.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/useSharedDesignerContext.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/version.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.1/version.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/LICENSE.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/LICENSE.TXT.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/System.Memory.4.5.4.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/System.Memory.4.5.4.nupkg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/THIRD-PARTY-NOTICES.TXT.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/lib.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/lib/net461.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/lib/net461/System.Memory.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/lib/net461/System.Memory.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/lib/net461/System.Memory.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/lib/net461/System.Memory.xml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/useSharedDesignerContext.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/useSharedDesignerContext.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/version.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.4/version.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/indexLayout.xml" afterDir="false" />
+    <list default="true" id="17fb728b-39c6-4a16-98d1-6351f656e32b" name="Default Changelist" comment="&quot;Server request works&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/LICENSE.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/LICENSE.TXT.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/System.Buffers.4.5.0.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/System.Buffers.4.5.0.nupkg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/THIRD-PARTY-NOTICES.TXT.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/lib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/lib/netstandard2.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/lib/netstandard2.0/System.Buffers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/lib/netstandard2.0/System.Buffers.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/lib/netstandard2.0/System.Buffers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/lib/netstandard2.0/System.Buffers.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/useSharedDesignerContext.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/useSharedDesignerContext.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Buffers.4.5.0/version.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/LICENSE.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/LICENSE.TXT.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/System.Memory.4.5.3.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/System.Memory.4.5.3.nupkg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/THIRD-PARTY-NOTICES.TXT.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/lib.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/lib/netstandard2.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/lib/netstandard2.0/System.Memory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/lib/netstandard2.0/System.Memory.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/lib/netstandard2.0/System.Memory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/lib/netstandard2.0/System.Memory.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/useSharedDesignerContext.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/useSharedDesignerContext.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/System.Memory.4.5.3/version.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SavedScreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SavedScreen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/MonsterManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/MonsterManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/PhotoResolver.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/PhotoResolver.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/LICENSE.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/System.Buffers.4.5.0.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netcoreapp2.0/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netstandard1.1/System.Buffers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netstandard1.1/System.Buffers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netstandard2.0/System.Buffers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netstandard2.0/System.Buffers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/uap10.0.16299/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/net45/System.Buffers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/net45/System.Buffers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netcoreapp2.0/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netstandard1.1/System.Buffers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netstandard1.1/System.Buffers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netstandard2.0/System.Buffers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netstandard2.0/System.Buffers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/uap10.0.16299/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/useSharedDesignerContext.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Memory.4.5.3/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Memory.4.5.3/LICENSE.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Memory.4.5.3/System.Memory.4.5.3.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Memory.4.5.3/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Memory.4.5.3/lib/netcoreapp2.1/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Memory.4.5.3/lib/netstandard1.1/System.Memory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Memory.4.5.3/lib/netstandard1.1/System.Memory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Memory.4.5.3/lib/netstandard2.0/System.Memory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Memory.4.5.3/lib/netstandard2.0/System.Memory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Memory.4.5.3/ref/netcoreapp2.1/_._" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Memory.4.5.3/useSharedDesignerContext.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/System.Memory.4.5.3/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +25,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3427FF44-A531-447C-8158-09E1FA5F66C8/7c/2766d22e/GameView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3427FF44-A531-447C-8158-09E1FA5F66C8/6e/640e9173/HostView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0DF6749E-A7EB-43F5-8475-647FABED0313/27/ed25e9c0/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonsterManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Roaming/NuGet/NuGet.Config" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -150,6 +36,7 @@
         <option value="$PROJECT_DIR$/Assets/Test/MonsterManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Test/PhotoResolver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PhotoResolver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonsterManager.cs" />
       </list>
     </option>
   </component>
@@ -212,8 +99,16 @@
       <workItem from="1586246163564" duration="21915000" />
       <workItem from="1586361906594" duration="7480000" />
       <workItem from="1586439371209" duration="4762000" />
-      <workItem from="1586444505726" duration="3576000" />
+      <workItem from="1586444505726" duration="4414000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;Server request works&quot;">
+      <created>1586454637348</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586454637348</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +131,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="&quot;Server request works&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Server request works&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="591" y="198" key="#Notifications" timestamp="1586454459654">
@@ -310,10 +207,10 @@
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
     <state width="1799" height="364" key="GridCell.Tab.3.right/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851022" />
-    <state x="731" y="307" key="Vcs.Push.Dialog.v2" timestamp="1586454465969">
+    <state x="731" y="307" key="Vcs.Push.Dialog.v2" timestamp="1586455501158">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
-    <state x="731" y="307" key="Vcs.Push.Dialog.v2/78.0.1842.1080@78.0.1842.1080" timestamp="1586454465969" />
+    <state x="731" y="307" key="Vcs.Push.Dialog.v2/78.0.1842.1080@78.0.1842.1080" timestamp="1586455501158" />
     <state x="655" y="250" key="run.anything.popup" timestamp="1586354536238">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
