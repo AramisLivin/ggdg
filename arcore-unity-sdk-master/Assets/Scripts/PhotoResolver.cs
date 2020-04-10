@@ -24,12 +24,19 @@ public class PhotoResolver : MonoBehaviour
     private List<List<int>> locations;
     private List<byte[]> images;
     private GameObject btlmsk;
-
+    private GameObject btlbot;
+    private RectTransform bmrt;
+    private RectTransform bbrt;
+    
     private void Start()
     {
         MainCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
         btlmsk = GameObject.Find("bottlemask");
+        btlbot = GameObject.Find("bottlebot");
+        bbrt = btlbot.GetComponent<RectTransform>();
+        bmrt = btlmsk.GetComponent<RectTransform>();
         btlmsk.SetActive(false);
+        btlbot.SetActive(false);
     }
 
 
@@ -67,11 +74,11 @@ public class PhotoResolver : MonoBehaviour
              var result = GetMaskFromServer(bytes).Result;
              locations = result.Item1;
              images = result.Item2;
-             ScanColor();
+             MaskPositioning();
             // For testing purposes, also write to a file in the project folder
             File.WriteAllBytes(Application.dataPath + "/SavedScreen.png", bytes);
             Debug.Log("Shotted to: " + Application.dataPath + " SavedScreen.png");
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForChangedResult();
         }
     }
 
@@ -113,7 +120,7 @@ public class PhotoResolver : MonoBehaviour
 }
     
     //Checking downloaded mask from the server for a bottles
-    public void ScanColor ()
+    public void MaskPositioning ()
     {
         //Count of masks is writed from responce
         int CountOfMasks = locations.Count;
@@ -131,10 +138,13 @@ public class PhotoResolver : MonoBehaviour
                 int height = locations[i][3];
 
 
-                Debug.Log("Mask is on " + locations[i][0] +"; " + locations[i][1]);
+                Debug.Log("Mask is on " + locations[i][0] +"; " + locations[i][1]+". Width " + locations[i][2] +"; height " + locations[i][3]);
                 btlmsk.SetActive(true);
-                btlmsk.GetComponent<RectTransform>().position = new Vector3(locations[i][0],locations[i][1]);
-                btlmsk.GetComponent<RectTransform>().sizeDelta = new Vector2(locations[i][2], locations[i][3]);
+                btlbot.SetActive(true);
+                bmrt.position = new Vector3(maskX,maskY);
+                bmrt.sizeDelta = new Vector2(width, height);
+                bbrt.position = new Vector3(maskX + width / 2,maskY + height);
+                
                 BottleBot = new Vector3();
                 TrackableHit hit;
                 TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
