@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17fb728b-39c6-4a16-98d1-6351f656e32b" name="Default Changelist" comment="Server request works, saving a position of bottle in real world">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SavedScreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SavedScreen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaskMat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaskMat.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PhotoResolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PhotoResolver.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +22,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0DF6749E-A7EB-43F5-8475-647FABED0313/4b/3b3fd7e2/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHitFlags.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/PhotoResolver (1).cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3427FF44-A531-447C-8158-09E1FA5F66C8/05/6a6400d2/PlayModeView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PhotoResolver.cs" root0="FORCE_HIGHLIGHTING" />
@@ -109,6 +107,7 @@
       <workItem from="1586444505726" duration="4977000" />
       <workItem from="1586501517897" duration="6533000" />
       <workItem from="1586508228952" duration="2878000" />
+      <workItem from="1586542543324" duration="1292000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Server request works&quot;">
       <created>1586454637348</created>

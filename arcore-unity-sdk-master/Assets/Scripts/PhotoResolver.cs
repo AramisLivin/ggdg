@@ -64,10 +64,10 @@ public class PhotoResolver : MonoBehaviour
             int width = Screen.width;
             int height = Screen.height;
             tex = new Texture2D(width, height, TextureFormat.RGB24, false);
-
+            
             // Read screen contents into the texture
             tex = (Texture2D) CameraMaterial.mainTexture;
-            byte[] bytes = tex.EncodeToPNG();
+            byte[] bytes = tex.EncodeToJPG(50);
            // tex.GetPixel()
             
            // Object.Destroy(tex);
