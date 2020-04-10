@@ -12,7 +12,7 @@ using Unity.UNetWeaver;
 using UnityEngine;
 using UnityEngine.Networking;
 using Object = UnityEngine.Object;
-using System.Text.Json;
+using Newtonsoft.Json;
 
 public class PhotoResolver : MonoBehaviour
 {
@@ -23,10 +23,13 @@ public class PhotoResolver : MonoBehaviour
     public Vector3 BottleBot;
     private List<List<int>> locations;
     private List<byte[]> images;
+    private GameObject btlmsk;
+
     private void Start()
     {
         MainCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
-        
+        btlmsk = GameObject.Find("bottlemask");
+        btlmsk.SetActive(false);
     }
 
 
@@ -46,7 +49,7 @@ public class PhotoResolver : MonoBehaviour
     
     IEnumerator CapturePNG()
     {
-       // while (true)
+        while (true)
         {
             // We should only read the screen buffer after rendering is complete
             yield return new WaitForEndOfFrame();
@@ -64,8 +67,7 @@ public class PhotoResolver : MonoBehaviour
              var result = GetMaskFromServer(bytes).Result;
              locations = result.Item1;
              images = result.Item2;
-           
-           
+             ScanColor();
             // For testing purposes, also write to a file in the project folder
             File.WriteAllBytes(Application.dataPath + "/SavedScreen.png", bytes);
             Debug.Log("Shotted to: " + Application.dataPath + " SavedScreen.png");
@@ -80,10 +82,10 @@ public class PhotoResolver : MonoBehaviour
         httpClient.BaseAddress = new Uri("http://188.214.128.128:80/");
         MultipartFormDataContent form = new MultipartFormDataContent();
         form.Add(new ByteArrayContent(bytes, 0, bytes.Length), "image", "image.webp");
-         var response = httpClient.PostAsync("/api/bottle/masks", form).Result;
-          response.EnsureSuccessStatusCode();
+        var response = httpClient.PostAsync("/api/bottle/masks", form).Result;
+        response.EnsureSuccessStatusCode();
         httpClient.Dispose();
-         Debug.Log(response.Content.ReadAsStringAsync().Result);
+        //Debug.Log(response.Content.ReadAsStringAsync().Result);
         var provider = await response.Content.ReadAsMultipartAsync();
         // Default empty value
         List<List<int>> result_locs = new List<List<int>>();
@@ -96,21 +98,22 @@ public class PhotoResolver : MonoBehaviour
             if (fileName.Equals("\"locations.json\""))
             {
                 string locs = httpContent.ReadAsStringAsync().Result;
-                Debug.Log(locs);
-                result_locs = JsonSerializer.Deserialize<LocationsJSON>(locs).locations;
+                JsonSerializer JS = new JsonSerializer();
+                JsonTextReader reader = new JsonTextReader(new StringReader(locs));
+                result_locs = JS.Deserialize<LocationsJSON>(reader).locations;
             }
             else
             {
                 byte[] img = httpContent.ReadAsByteArrayAsync().Result;
                 result_imgs.Add(img);
-            }
+                }
         }
         return new Tuple<List<List<int>>, List<byte[]>>(result_locs, result_imgs);
     
 }
     
     //Checking downloaded mask from the server for a bottles
-    public void ScanColor(Texture2D Frame)
+    public void ScanColor ()
     {
         //Count of masks is writed from responce
         int CountOfMasks = locations.Count;
@@ -128,7 +131,10 @@ public class PhotoResolver : MonoBehaviour
                 int height = locations[i][3];
 
 
-                Debug.Log("Mask " + locations[i]);
+                Debug.Log("Mask is on " + locations[i][0] +"; " + locations[i][1]);
+                btlmsk.SetActive(true);
+                btlmsk.GetComponent<RectTransform>().position = new Vector3(locations[i][0],locations[i][1]);
+                btlmsk.GetComponent<RectTransform>().sizeDelta = new Vector2(locations[i][2], locations[i][3]);
                 BottleBot = new Vector3();
                 TrackableHit hit;
                 TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
@@ -139,8 +145,7 @@ public class PhotoResolver : MonoBehaviour
                 {
                     BottleBot = hit.Pose.position;
                     Debug.Log("Bottle has been found and placed on X: " + hit.Pose.position.x + ", Y: " +
-                              hit.Pose.position.y + ", Z: " + hit.Pose.position.z);
-                    Debug.Log("Bottle has been found and placed. Distance to it: " + hit.Distance + "m.");
+                              hit.Pose.position.y + ", Z: " + hit.Pose.position.z+". Distance to it: " + hit.Distance + "m.");
                 }
                 else
                 {
