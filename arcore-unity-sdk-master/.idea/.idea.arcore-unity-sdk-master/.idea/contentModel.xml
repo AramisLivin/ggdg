@@ -431,6 +431,7 @@
         <e p="Scripts" t="Include">
           <e p="MonsterManager.cs" t="Include" />
           <e p="PhotoResolver.cs" t="Include" />
+          <e p="TextureScale.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

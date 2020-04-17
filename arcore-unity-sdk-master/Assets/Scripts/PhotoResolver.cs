@@ -29,16 +29,21 @@ public class PhotoResolver : MonoBehaviour
     private RectTransform bbrt;
     
     private void Start()
+        {
+            MainCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+            btlmsk = GameObject.Find("bottlemask");
+            btlbot = GameObject.Find("bottlebot");
+            bbrt = btlbot.GetComponent<RectTransform>();
+            bmrt = btlmsk.GetComponent<RectTransform>();
+            btlmsk.SetActive(false);
+            btlbot.SetActive(false);
+        }
+    public void Shot()
     {
-        MainCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
-        btlmsk = GameObject.Find("bottlemask");
-        btlbot = GameObject.Find("bottlebot");
-        bbrt = btlbot.GetComponent<RectTransform>();
-        bmrt = btlmsk.GetComponent<RectTransform>();
-        btlmsk.SetActive(false);
-        btlbot.SetActive(false);
+        StartCoroutine(CapturePNG());
     }
 
+    
 
     Texture2D FlipPicture(Texture2D original)
     {
@@ -57,29 +62,14 @@ public class PhotoResolver : MonoBehaviour
         snap.Apply();
         return snap;
     }
-
-    //Scene is started // BUTTON IS PRESSED
-    public void Shot()
-    {
-        StartCoroutine(CapturePNG());
-        
-    }
-
-    
     
     IEnumerator CapturePNG()
     {
         while (true)
         {
-            // We should only read the screen buffer after rendering is complete
-            yield return new WaitForEndOfFrame();
-            // Create a texture the size of the screen, RGB24 format
-            int width = Screen.width;
-            int height = Screen.height;
-            tex = new Texture2D(width, height, TextureFormat.RGB24, false);
-            
-            // Read screen contents into the texture
+           // Read screen contents into the texture
             tex = (Texture2D) CameraMaterial.mainTexture;
+            TextureScale.Bilinear (tex, 700, 700);
             byte[] bytes = FlipPicture(tex).EncodeToJPG(50);
            // tex.GetPixel()
             
@@ -89,8 +79,8 @@ public class PhotoResolver : MonoBehaviour
              images = result.Item2;
              MaskPositioning();
             // For testing purposes, also write to a file in the project folder
-            File.WriteAllBytes(Application.dataPath + "/SavedScreen.png", bytes);
-            Debug.Log("Shotted to: " + Application.dataPath + " SavedScreen.png");
+            File.WriteAllBytes(Application.dataPath + "/SavedScreen.jpg", bytes);
+            Debug.Log("Shotted to: " + Application.dataPath + " SavedScreen.jpg");
             yield return new WaitForChangedResult();
         }
     }
@@ -145,10 +135,10 @@ public class PhotoResolver : MonoBehaviour
             {
 
                 //Here comes x,y,width,height
-                int maskX = locations[i][0];
-                int maskY = locations[i][1];
-                int width = locations[i][2];
-                int height = locations[i][3];
+                int maskX = locations[i][0] * Screen.width;
+                int maskY = locations[i][1] * Screen.height;
+                int width = locations[i][2] * Screen.width;
+                int height = locations[i][3] * Screen.height;
 
 
                 Debug.Log("Mask is on " + locations[i][0] +"; " + locations[i][1]+". Width " + locations[i][2] +"; height " + locations[i][3]);
