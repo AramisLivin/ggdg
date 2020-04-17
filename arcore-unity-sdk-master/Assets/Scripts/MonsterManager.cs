@@ -9,7 +9,7 @@ public class MonsterManager : MonoBehaviour
     private GameObject Camera;
     private Object BottlePrefab;
     private Vector3 BottlePos;
-    PhotoResolver PR = new PhotoResolver();
+//    PhotoResolver PR = new PhotoResolver();
     void Start()
     {
         Camera = GameObject.Find("ARCore Device");

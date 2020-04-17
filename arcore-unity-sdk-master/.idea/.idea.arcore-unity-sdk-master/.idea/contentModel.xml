@@ -6,6 +6,7 @@
     <e p="D:\WORK\arcore-unity-sdk-master" t="IncludeRecursive">
       <e p="arcore-unity-sdk-master.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="GoogleARCore" t="Include">
@@ -426,6 +427,105 @@
         <e p="PlayServicesResolver" t="Include">
           <e p="Editor" t="Include">
             <e p="play-services-resolver_v1.2.122.0.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="RuntimeInspector" t="Include">
+            <e p="ExternalResources" t="Include">
+              <e p="ColorWheel" t="Include">
+                <e p="ColorWheelControl.cs" t="Include" />
+                <e p="ColorWheelLICENSE.txt" t="Include" />
+                <e p="Visuals" t="Include">
+                  <e p="ColorWheelShader.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="README.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="RuntimeHierarchy" t="Include">
+                <e p="Helpers" t="Include">
+                  <e p="HierarchyDragDropListener.cs" t="Include" />
+                  <e p="PseudoSceneSourceTransform.cs" t="Include" />
+                </e>
+                <e p="HierarchyData.cs" t="Include" />
+                <e p="HierarchyDataRoot.cs" t="Include" />
+                <e p="HierarchyDataRootPseudoScene.cs" t="Include" />
+                <e p="HierarchyDataRootScene.cs" t="Include" />
+                <e p="HierarchyDataRootSearch.cs" t="Include" />
+                <e p="HierarchyDataTransform.cs" t="Include" />
+                <e p="HierarchyField.cs" t="Include" />
+              </e>
+              <e p="RuntimeHierarchy.cs" t="Include" />
+              <e p="RuntimeInspector" t="Include">
+                <e p="Attributes" t="Include">
+                  <e p="RuntimeInspectorButtonAttribute.cs" t="Include" />
+                </e>
+                <e p="Fields" t="Include">
+                  <e p="ArrayField.cs" t="Include" />
+                  <e p="BoolField.cs" t="Include" />
+                  <e p="BoundsField.cs" t="Include" />
+                  <e p="ColorField.cs" t="Include" />
+                  <e p="EnumField.cs" t="Include" />
+                  <e p="ExposedMethodField.cs" t="Include" />
+                  <e p="GameObjectField.cs" t="Include" />
+                  <e p="InspectorField.cs" t="Include" />
+                  <e p="NumberField.cs" t="Include" />
+                  <e p="NumberRangeField.cs" t="Include" />
+                  <e p="ObjectField.cs" t="Include" />
+                  <e p="ObjectReferenceField.cs" t="Include" />
+                  <e p="RectField.cs" t="Include" />
+                  <e p="StringField.cs" t="Include" />
+                  <e p="TextureReferenceField.cs" t="Include" />
+                  <e p="TransformField.cs" t="Include" />
+                  <e p="Vector2Field.cs" t="Include" />
+                  <e p="Vector3Field.cs" t="Include" />
+                  <e p="Vector4Field.cs" t="Include" />
+                </e>
+                <e p="Helpers" t="Include">
+                  <e p="BoundInputField.cs" t="Include" />
+                  <e p="BoundSlider.cs" t="Include" />
+                  <e p="ColorPicker" t="Include">
+                    <e p="ColorPicker.cs" t="Include" />
+                    <e p="ColorPickerAlphaSlider.cs" t="Include" />
+                  </e>
+                  <e p="DraggedReferenceItem.cs" t="Include" />
+                  <e p="DraggedReferenceSourceCamera.cs" t="Include" />
+                  <e p="DraggedReferenceSourceUI.cs" t="Include" />
+                  <e p="ExposedMethod.cs" t="Include" />
+                  <e p="ExposedVariablesEnumerator.cs" t="Include" />
+                  <e p="NonDrawingGraphic.cs" t="Include" />
+                  <e p="NonDrawingMaskableGraphic.cs" t="Include" />
+                  <e p="NumberHandlers.cs" t="Include" />
+                  <e p="ObjectReferencePicker" t="Include">
+                    <e p="ObjectReferencePicker.cs" t="Include" />
+                    <e p="ObjectReferencePickerItem.cs" t="Include" />
+                  </e>
+                  <e p="PointerEventListener.cs" t="Include" />
+                  <e p="PopupBase.cs" t="Include" />
+                  <e p="RecycledListView" t="Include">
+                    <e p="IListViewAdapter.cs" t="Include" />
+                    <e p="RecycledListItem.cs" t="Include" />
+                    <e p="RecycledListView.cs" t="Include" />
+                  </e>
+                  <e p="RuntimeInspectorSettings.cs" t="Include" />
+                  <e p="RuntimeInspectorUtils.cs" t="Include" />
+                  <e p="Tooltip.cs" t="Include" />
+                  <e p="TooltipArea.cs" t="Include" />
+                  <e p="VariableSet.cs" t="Include" />
+                  <e p="WindowDragHandler.cs" t="Include" />
+                </e>
+                <e p="Skin" t="Include">
+                  <e p="SkinnedWindow.cs" t="Include" />
+                  <e p="SkinUtils.cs" t="Include" />
+                  <e p="UISkin.cs" t="Include" />
+                </e>
+              </e>
+              <e p="RuntimeInspector.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="ColorPickerAlphaShader.shader" t="Include" />
+            </e>
+            <e p="ThirdPartyNotices.txt" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">

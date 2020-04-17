@@ -4,15 +4,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
-using CollabProxy.UI;
-using Google.Protobuf;
 using GoogleARCore;
-using Microsoft.SqlServer.Server;
-using Unity.UNetWeaver;
 using UnityEngine;
-using UnityEngine.Networking;
-using Object = UnityEngine.Object;
 using Newtonsoft.Json;
+using UnityEngine.UI;
 
 public class PhotoResolver : MonoBehaviour
 {
@@ -25,19 +20,21 @@ public class PhotoResolver : MonoBehaviour
     private List<byte[]> images;
     private GameObject btlmsk;
     private GameObject btlbot;
-    private RectTransform bmrt;
-    private RectTransform bbrt;
-    
+    private RectTransform BtlMskRectTransform;
+    private RectTransform BtlBtRectTransform;
+   
+
     private void Start()
-        {
-            MainCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+    {
+          MainCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
             btlmsk = GameObject.Find("bottlemask");
             btlbot = GameObject.Find("bottlebot");
-            bbrt = btlbot.GetComponent<RectTransform>();
-            bmrt = btlmsk.GetComponent<RectTransform>();
+            BtlBtRectTransform = btlbot.GetComponent<RectTransform>();
+            BtlMskRectTransform = btlmsk.GetComponent<RectTransform>();
             btlmsk.SetActive(false);
             btlbot.SetActive(false);
-        }
+    }
+    
     public void Shot()
     {
         StartCoroutine(CapturePNG());
@@ -67,21 +64,24 @@ public class PhotoResolver : MonoBehaviour
     {
         while (true)
         {
-           // Read screen contents into the texture
+           // Read screen and resizing contents into the texture
             tex = (Texture2D) CameraMaterial.mainTexture;
-            TextureScale.Bilinear (tex, 700, 700);
-            byte[] bytes = FlipPicture(tex).EncodeToJPG(50);
-           // tex.GetPixel()
             
-           // Object.Destroy(tex);
-             var result = GetMaskFromServer(bytes).Result;
-             locations = result.Item1;
-             images = result.Item2;
+            float d = Math.Max(tex.width, tex.height);
+            float k = 700 / d;
+            int NewWidth = Convert.ToInt32(tex.width * k);
+            int NewHeight = Convert.ToInt32(tex.height * k);
+                
+            TextureScale.Bilinear (tex, NewWidth, NewHeight);
+            byte[] bytes = FlipPicture(tex).EncodeToJPG(40);
+          
+            var result = GetMaskFromServer(bytes).Result;
+            
+            locations = result.Item1;
+            images = result.Item2;
+             
              MaskPositioning();
-            // For testing purposes, also write to a file in the project folder
-            File.WriteAllBytes(Application.dataPath + "/SavedScreen.jpg", bytes);
-            Debug.Log("Shotted to: " + Application.dataPath + " SavedScreen.jpg");
-            yield return new WaitForChangedResult();
+             yield return new WaitForChangedResult();
         }
     }
 
@@ -95,7 +95,7 @@ public class PhotoResolver : MonoBehaviour
         var response = httpClient.PostAsync("/api/bottle/masks", form).Result;
         response.EnsureSuccessStatusCode();
         httpClient.Dispose();
-        //Debug.Log(response.Content.ReadAsStringAsync().Result);
+        
         var provider = await response.Content.ReadAsMultipartAsync();
         // Default empty value
         List<List<float>> result_locs = new List<List<float>>();
@@ -120,7 +120,7 @@ public class PhotoResolver : MonoBehaviour
         }
         return new Tuple<List<List<float>>, List<byte[]>>(result_locs, result_imgs);
     
-}
+    }    
     
     //Checking downloaded mask from the server for a bottles
     public void MaskPositioning ()
@@ -129,35 +129,42 @@ public class PhotoResolver : MonoBehaviour
         int CountOfMasks = locations.Count;
         if (CountOfMasks == 0)
         {
+            btlmsk.SetActive(false);
+            btlbot.SetActive(false);
             return;
         }
         for (int i = 0; i < CountOfMasks; i++)
             {
-
+                //GameObject msk = new GameObject();
+                Texture2D tex = new Texture2D(700,700);
+                ImageConversion.LoadImage(tex, images[i]);
+                btlmsk.GetComponent<RawImage>().texture = tex;
+               
                 //Here comes x,y,width,height
                 float maskX = locations[i][0] * Screen.width;
                 float maskY = locations[i][1] * Screen.height;
                 float width = locations[i][2] * Screen.width;
                 float height = locations[i][3] * Screen.height;
-
-
-                Debug.Log("Mask is on " + locations[i][0] +"; " + locations[i][1]+". Width " + locations[i][2] +"; height " + locations[i][3]);
+                
+                //Debug saving
+                //File.WriteAllBytes(Application.dataPath + "/SavedMask.png", images[i]);
+                //Debug saving
+                
+                Debug.Log("Mask is on " + maskX +"; " + maskY+". Width " + width +"; height " + height);
                 btlmsk.SetActive(true);
                 btlbot.SetActive(true);
-                bmrt.position = new Vector3(maskX,maskY);
-                bmrt.sizeDelta = new Vector2(width, height);
-                bbrt.position = new Vector3(maskX + width / 2,maskY + height);
-                
+                BtlMskRectTransform.position = new Vector3(maskX,maskY);
+                //BtlMskRectTransform.sizeDelta = new Vector2(width, height);
+                BtlBtRectTransform.position = new Vector3(maskX,maskY);
                 BottleBot = new Vector3();
                 TrackableHit hit;
                 TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
                                                   TrackableHitFlags.FeaturePointWithSurfaceNormal;
 
-
                 if (GoogleARCore.Frame.Raycast(maskX + width / 2, maskY + height, raycastFilter, out hit))
                 {
                     BottleBot = hit.Pose.position;
-                    Debug.Log("Bottle has been found and placed on X: " + hit.Pose.position.x + ", Y: " +
+                    Debug.Log("Bottle has been found and placed on X: " + hit.Pose.position.x + ", Y: " +  
                               hit.Pose.position.y + ", Z: " + hit.Pose.position.z+". Distance to it: " + hit.Distance + "m.");
                 }
                 else
@@ -166,10 +173,11 @@ public class PhotoResolver : MonoBehaviour
                 }
 
 
-            }
+             }
         
+        }
     }
-    }
+
     
 public class LocationsJSON
 {
