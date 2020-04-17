@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17fb728b-39c6-4a16-98d1-6351f656e32b" name="Default Changelist" comment="Server request works, saving a position of bottle in real world">
-      <change afterPath="$PROJECT_DIR$/Assets/SavedScreen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SavedScreen.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TextureScale.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SavedScreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SavedScreen.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SavedScreen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SavedScreen.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PhotoResolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PhotoResolver.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,6 +110,7 @@
       <workItem from="1586542543324" duration="1292000" />
       <workItem from="1587115022174" duration="300000" />
       <workItem from="1587116640238" duration="5492000" />
+      <workItem from="1587123938149" duration="1044000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Server request works&quot;">
       <created>1586454637348</created>

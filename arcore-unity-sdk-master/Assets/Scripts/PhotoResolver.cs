@@ -21,7 +21,7 @@ public class PhotoResolver : MonoBehaviour
     private Texture2D tex;
     private MeshCollider coll;
     public Vector3 BottleBot;
-    private List<List<int>> locations;
+    private List<List<float>> locations;
     private List<byte[]> images;
     private GameObject btlmsk;
     private GameObject btlbot;
@@ -86,7 +86,7 @@ public class PhotoResolver : MonoBehaviour
     }
 
     //Uploading camera view to the server to get masks
-    static async Task<Tuple<List<List<int>>, List<byte[]>>> GetMaskFromServer(byte[] bytes)
+    static async Task<Tuple<List<List<float>>, List<byte[]>>> GetMaskFromServer(byte[] bytes)
     {
         HttpClient httpClient = new HttpClient();
         httpClient.BaseAddress = new Uri("http://188.214.128.128:80/");
@@ -98,7 +98,7 @@ public class PhotoResolver : MonoBehaviour
         //Debug.Log(response.Content.ReadAsStringAsync().Result);
         var provider = await response.Content.ReadAsMultipartAsync();
         // Default empty value
-        List<List<int>> result_locs = new List<List<int>>();
+        List<List<float>> result_locs = new List<List<float>>();
         List<byte[]> result_imgs = new List<byte[]>();
         
         // Parse response
@@ -118,7 +118,7 @@ public class PhotoResolver : MonoBehaviour
                 result_imgs.Add(img);
                 }
         }
-        return new Tuple<List<List<int>>, List<byte[]>>(result_locs, result_imgs);
+        return new Tuple<List<List<float>>, List<byte[]>>(result_locs, result_imgs);
     
 }
     
@@ -135,10 +135,10 @@ public class PhotoResolver : MonoBehaviour
             {
 
                 //Here comes x,y,width,height
-                int maskX = locations[i][0] * Screen.width;
-                int maskY = locations[i][1] * Screen.height;
-                int width = locations[i][2] * Screen.width;
-                int height = locations[i][3] * Screen.height;
+                float maskX = locations[i][0] * Screen.width;
+                float maskY = locations[i][1] * Screen.height;
+                float width = locations[i][2] * Screen.width;
+                float height = locations[i][3] * Screen.height;
 
 
                 Debug.Log("Mask is on " + locations[i][0] +"; " + locations[i][1]+". Width " + locations[i][2] +"; height " + locations[i][3]);
@@ -173,7 +173,7 @@ public class PhotoResolver : MonoBehaviour
     
 public class LocationsJSON
 {
-    public List<List<int>> locations { get; set; }
+    public List<List<float>> locations { get; set; }
 }
     
     
