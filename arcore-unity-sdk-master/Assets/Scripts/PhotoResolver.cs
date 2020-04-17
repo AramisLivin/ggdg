@@ -40,9 +40,22 @@ public class PhotoResolver : MonoBehaviour
     }
 
 
-    private void Update()
+    Texture2D FlipPicture(Texture2D original)
     {
-       
+        int width = original.width;
+        int height = original.height;
+        Texture2D snap = new Texture2D(width, height);
+        Color[] pixels = original.GetPixels();
+        Color[] pixelsFlipped = new Color[pixels.Length];
+
+        for (int i = 0; i < height; i++)
+        {
+            Array.Copy(pixels, i*width, pixelsFlipped, (height-i-1) * width , width);
+        }
+
+        snap.SetPixels(pixelsFlipped);
+        snap.Apply();
+        return snap;
     }
 
     //Scene is started // BUTTON IS PRESSED
@@ -67,7 +80,7 @@ public class PhotoResolver : MonoBehaviour
             
             // Read screen contents into the texture
             tex = (Texture2D) CameraMaterial.mainTexture;
-            byte[] bytes = tex.EncodeToJPG(50);
+            byte[] bytes = FlipPicture(tex).EncodeToJPG(50);
            // tex.GetPixel()
             
            // Object.Destroy(tex);
