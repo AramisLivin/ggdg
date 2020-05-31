@@ -31,15 +31,22 @@ public class PhotoResolver : MonoBehaviour
             btlbot = GameObject.Find("bottlebot");
             BtlBtRectTransform = btlbot.GetComponent<RectTransform>();
             BtlMskRectTransform = btlmsk.GetComponent<RectTransform>();
-            btlmsk.SetActive(false);
+            btlmsk.SetActive(false);    
             btlbot.SetActive(false);
+            StartCoroutine(StartDelay());
+    }
+
+    IEnumerator StartDelay()
+    {
+        yield return new WaitForSeconds(3);
+        StartCoroutine(CapturePNG());
     }
     
     public void Shot()
     {
-        StartCoroutine(CapturePNG());
+        
     }
-
+    
     
 
     Texture2D FlipPicture(Texture2D original)

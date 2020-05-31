@@ -2,88 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17fb728b-39c6-4a16-98d1-6351f656e32b" name="Default Changelist" comment="Server request works, saving a position of bottle in real world">
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/ExternalResources/ColorWheel/ColorWheel.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/ExternalResources/ColorWheel/ColorWheelControl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/ExternalResources/ColorWheel/Visuals.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/ExternalResources/ColorWheel/Visuals/ColorSelector.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/ExternalResources/ColorWheel/Visuals/ColorWheelMaterial.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/ExternalResources/ColorWheel/Visuals/ColorWheelShader.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/InternalSettings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Prefabs/RuntimeInspector/Fields/ArrayField.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Prefabs/RuntimeInspector/Fields/ArrayField.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Prefabs/RuntimeInspector/Fields/ColorField.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Prefabs/RuntimeInspector/Fields/GameObjectField.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Prefabs/RuntimeInspector/Fields/RectField.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Prefabs/RuntimeInspector/Fields/Vector4Field.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Prefabs/RuntimeInspector/Helpers/ReferencePickerItem.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Resources/RuntimeInspector/ObjectReferencePicker.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Resources/RuntimeInspector/Tooltip.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Resources/RuntimeInspector/Tooltip.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/RuntimeHierarchy.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeHierarchy/Helpers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeHierarchy/HierarchyDataRootScene.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeHierarchy/HierarchyDataRootSearch.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeHierarchy/HierarchyDataTransform.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeHierarchy/HierarchyDataTransform.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Attributes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Attributes/RuntimeInspectorButtonAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Attributes/RuntimeInspectorButtonAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Fields/ColorField.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Fields/NumberField.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Fields/NumberRangeField.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Fields/ObjectField.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Fields/ObjectReferenceField.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Fields/TextureReferenceField.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Fields/TransformField.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Fields/Vector4Field.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/BoundInputField.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/ColorPicker.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/DraggedReferenceSourceCamera.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/ExposedMethod.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/ExposedVariablesEnumerator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/NonDrawingMaskableGraphic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/NonDrawingMaskableGraphic.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/NumberHandlers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/ObjectReferencePicker/ObjectReferencePicker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/ObjectReferencePicker/ObjectReferencePicker.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/PointerEventListener.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/PopupBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/PopupBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/RecycledListView/IListViewAdapter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/RuntimeInspectorSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/Tooltip.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/Tooltip.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/TooltipArea.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Helpers/WindowDragHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Scripts/RuntimeInspector/Skin/SkinnedWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Shaders/ColorPickerAlphaMaterial.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Shaders/ColorPickerAlphaShader.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Skins.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Skins/DarkSkin.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Skins/DarkSkin.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Sprites/ButtonBg.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Sprites/Checkmark.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Sprites/ColorFieldBg.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Sprites/ColorFieldTransparentBg.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Sprites/DownArrow.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Sprites/DragAndDropBg.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Sprites/InputFieldBg.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Sprites/SliderBg.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Sprites/SliderThumb.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Sprites/SliderThumb.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/Sprites/White.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/ThirdPartyNotices.txt.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.arcore-unity-sdk-master/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APK/CV.apk" beforeDir="false" afterPath="$PROJECT_DIR$/APK/CV.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SavedScreen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SavedScreen.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonsterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonsterManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/RuntimeHierarchy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/RuntimeInspector/RuntimeHierarchy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PhotoResolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PhotoResolver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,6 +116,8 @@
       <workItem from="1587116640238" duration="5492000" />
       <workItem from="1587123938149" duration="1044000" />
       <workItem from="1587125931434" duration="12765000" />
+      <workItem from="1587140390203" duration="2116000" />
+      <workItem from="1587383582109" duration="1074000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Server request works&quot;">
       <created>1586454637348</created>
@@ -307,6 +233,10 @@
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
     <state width="1799" height="364" key="GridCell.Tab.3.right/78.0.1842.1080@78.0.1842.1080" timestamp="1585847851022" />
+    <state x="730" y="263" key="RiderGenerateDialog" timestamp="1587140429699">
+      <screen x="78" y="0" width="1842" height="1080" />
+    </state>
+    <state x="730" y="263" key="RiderGenerateDialog/78.0.1842.1080@78.0.1842.1080" timestamp="1587140429699" />
     <state x="731" y="307" key="Vcs.Push.Dialog.v2" timestamp="1586455582203">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
